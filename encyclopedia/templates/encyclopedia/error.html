@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Error page not found
+{% endblock %}
+
+{% block body %}
+    <br>
+    <h2>The page you were looking for does not yet exist</h2>
+    <br>
+    <a><i>Click <a href="{% url 'newentry' %}">here</a> to create a page for '{{ title }}'</i></a>
+{% endblock %}
